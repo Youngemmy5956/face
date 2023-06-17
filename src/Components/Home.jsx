@@ -139,7 +139,7 @@ export default function Home() {
           </p>
         </aside>
 
-        <main className="w-1/3 ">
+        <main className="w-1/3 pt-10">
           <div className="border-[#1c1e21] rounded-lg w-full px-4">
             <span className="flex gap-40 pl-20 w-full justify-around px-6 ">
               <p className="text-[#8d949e] flex gap-2">
