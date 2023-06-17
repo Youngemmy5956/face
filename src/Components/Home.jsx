@@ -12,6 +12,11 @@ import {BsFacebook} from "react-icons/bs";
 import {BsPeopleFill} from "react-icons/bs";
 import {FcFeedback} from "react-icons/fc";
 import {HiUserGroup} from "react-icons/hi";
+import {AiOutlineClockCircle} from "react-icons/ai";
+import {BsFillSave2Fill} from "react-icons/bs";
+import {IoIosArrowDropdown} from "react-icons/io";
+import {BsBook} from "react-icons/bs";
+import {BsCameraReels} from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -48,13 +53,36 @@ export default function Home() {
 
       <section className="w-full flex justify-between px-4">
         <aside className="w-1/3">
-          <p className="flex pt-4 gap-3"><CgProfile className="text-2xl"/>Emmanuel Nwamini</p>
-          <p className="flex pt-4 gap-3"><BsPeopleFill className="text-2xl"/>People</p>
-          <p className="flex pt-4 gap-3"><FcFeedback className="text-2xl"/>People</p>
-          <p className="flex pt-4 gap-3"><HiUserGroup className="text-2xl"/>Group</p>
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><CgProfile className="text-2xl"/>Emmanuel Nwamini</p>
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><BsPeopleFill className="text-2xl"/>People</p>
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><FcFeedback className="text-2xl"/>People</p>
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><HiUserGroup className="text-2xl"/>Group</p> 
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><GiFireplace className="text-2xl"/>Market Place</p> 
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><MdOndemandVideo className="text-2xl"/>Watch</p> 
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><AiOutlineClockCircle className="text-2xl"/>Memories</p> 
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><BsFillSave2Fill className="text-2xl"/>Saved</p> 
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><IoIosArrowDropdown className="text-2xl"/>See more</p> 
+          <hr className="w-[50%]" />
+          <p className="pt-2 text-[20px] text-[#8d949e]">Your shortcuts</p>
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><CgProfile className="text-2xl"/>Emmanuel Nwamini</p>
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><CgProfile className="text-2xl"/>Emmanuel Nwamini</p>
+          <p className="flex pt-4 gap-3 text-[#8d949e]"><CgProfile className="text-2xl"/>Emmanuel Nwamini</p>   
+
         </aside>
 
-        <main className="w-1/3">emmaneuel</main>
+        <main className="w-1/3">
+
+          <div>
+            <span>
+              <p className="text-[#8d949e]"><BsBook/>Stories</p>
+              <p className="text-[#8d949e]"> <BsCameraReels/>Reels</p>
+            </span>
+          </div>
+        
+        
+        
+        
+        </main>
 
         <span className="w-1/3">emmanuel</span>
       </section>

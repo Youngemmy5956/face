@@ -1,10 +1,15 @@
 import React from "react";
+import logo from "../Assets/dF5SId3UHWd.svg";
 
 export default function Signup() {
   return (
-    <div className="bg-[#f0f2f5]">
-      <div className=" h-[50vh] px-2 w-[45vh] border-[#8d949e] border-2 bg-[#fff]">
-        <p className="pt-4 text-[30px] font-bold text-center  text-black">Create a new account </p>
+    <div className="bg-[#f0f2f5] pb-14">
+
+      <span>
+        <img src={logo} alt="" className="w-[15%] ml-[43%]" />
+      </span>
+      <div className=" h-[65vh] px-2 w-[48vh] ml-[40%] rounded-[[10px] w-[50%]px] mt-6 shadow-md mb-10 border-2 bg-[#fff]">
+        <p className="pt-2 text-[30px] font-bold text-center  text-black">Create a new account </p>
         <p className= "text-center">It's quick and easy</p>
           <hr className="w-full"/>
 
@@ -18,11 +23,13 @@ export default function Signup() {
             <form action="" className="flex flex-col gap-4">
             <input type="email" placeholder="email" name="email" id="" className="border-[1px] border-[#8d949e] w-[100%] px-4 rounded-[4px] h-10"/>
           <input type="password" placeholder="password" name="password" id="" className="border-[1px] border-[#8d949e] px-4 w-[100%] rounded-[4px] h-10" />
-            </form>
-          <p>Sign up ?</p>
+            </form> 
+          <p className="pt-2">Sign up ?</p>
 
-           <label>
-              <span><select name="" id="res1">
+           <label className="">
+              <div className="gap-4 flex pt-2">
+              <div className="">
+                <select name="" id="" className="border-2 border-[#8d949e] px-[38px] py-2 rounded-[4px]">
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="" selected>
@@ -35,10 +42,10 @@ export default function Signup() {
                 <option value="">8</option>
                 <option value="">9</option>
                 <option value="">10</option>
-              </select></span>
+              </select></div>
 
-              <span>
-              <select name="" id="res2">
+              <div className="">
+              <select name="" id="" className="border-2 border-[#8d949e] px-[38px] py-2 rounded-[4px]">
                 <option value="">Jan</option>
                 <option value="">Feb</option>
                 <option value="" selected>
@@ -53,10 +60,10 @@ export default function Signup() {
                 <option value="">Oct</option>
               </select>
 
-              </span>
+              </div>
 
-              <span>
-              <select name="" id="res3">
+              <div className="">
+              <select name="" id="" className="border-2 border-[#8d949e] px-[38px] py-2 rounded-[4px]">
                 <option value="">2021</option>
                 <option value="">2022</option>
                 <option value="" selected>
@@ -70,22 +77,32 @@ export default function Signup() {
                 <option value="">2029</option>
                 <option value="">2030</option>
               </select>
-              </span>
+              </div>
+              </div>
            </label>
-
-           <div class="flex">
-              <div >
+                   
+           <p className="pt-2">Gender?</p>
+           <div class="flex gap-4 pt-2">
+            
+              <div className="border-2 rounded-[4px] border-[#8d949e] px-[10px] w-[50%] py-2 ">
                 Female <input type="radio" name="Female" id="nm" />
               </div>
 
-              <div >
+              <div className="border-2 rounded-[4px] border-[#8d949e] px-[10px] w-[50%] py-2 ">
                 Male <input type="radio" name="Female" id="nm" />
               </div>
 
-              <div id="nm">
+              <div className="border-2 rounded-[4px] border-[#8d949e] px-[10px] w-[50%] py-2 ">
                 Custom <input type="radio" name="Female" id="nm" />
               </div>
             </div>
+
+            <span>
+              <p className="text-xs font-medium text-[#8d949e] pt-2">People who use our service may have uploaded your contact information to Facebook. <b className="text-[blue]">Learn more.</b></p>
+              <p className="text-xs font-medium text-[#8d949e] pt-2">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time</p>
+            </span>
+
+            <button type="submit" className="text-[20px] px-[60px] mt-4 py-[4px] ml-[30%] bg-[green] text-white font-bold rounded-lg">Sign up</button>
         
           
       </div>
