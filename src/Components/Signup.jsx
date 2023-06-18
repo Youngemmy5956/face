@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Signup() {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const [input, setInput] = useState({
     firstName: "",
@@ -22,7 +22,7 @@ export default function Signup() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
+    // setLoading(true);
 
     try {
       await axios
@@ -30,12 +30,12 @@ export default function Signup() {
         .then((res) => {
           console.log(res.data);
           navigate("/login");
-          setLoading(false);
+          // setLoading(false);
           alert("Sign up successful");
         });
     } catch (err) {
       console.log(err);
-      setLoading(false);
+      // setLoading(false);
     }
   };
 
