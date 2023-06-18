@@ -53,7 +53,7 @@ export default function Home() {
         </span>
       </header>
 
-      <section className="w-full flex justify-between px-4">
+      <section className="w-full flex justify-between px-4 cursor-pointer">
         <aside className="w-1/3 sticky">
           <p className="flex pt-4 gap-3 text-[#8d949e]">
             <CgProfile className="text-2xl" />
