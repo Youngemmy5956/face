@@ -1,5 +1,4 @@
-import { useState } from "react";
-// import React {useState} from "react";
+import React, {useState} from "react";
 import logo from "../Assets/dF5SId3UHWd.svg";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -19,6 +18,7 @@ export default function Signup() {
   const onChangeHandler = (e) => {
     setInput({ ...input, [e.target.id]: e.target.value });
   };
+
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -50,21 +50,21 @@ export default function Signup() {
         </p>
         <p className="text-center">It's quick and easy</p>
         <hr className="w-full" />
-        <form htmlFor="input" className="flex gap-4 pt-4">
+        <form onSubmit={onSubmit} className="flex gap-4 pt-4">
           <input
             type="text"
             placeholder="First Name"
             onChange={onChangeHandler}
-            name="firstname"
-            id="firstname"
+            name="firstName"
+            id="firstName"
             className="border-[1px] border-[#8d949e] w-[50%] rounded-[4px] h-10 px-4"
           />
           <input
             type="text"
             placeholder="Last Name"
             onChange={onChangeHandler}
-            name="lastname"
-            id="lastname"
+            name="lastName"
+            id="lastName"
             className="border-[1px] border-[#8d949e] w-[50%] rounded-[4px] h-10 px-4"
           />
         </form>{" "}
@@ -100,9 +100,7 @@ export default function Signup() {
               >
                 <option value="">1</option>
                 <option value="">2</option>
-                <option value="" selected>
-                  3
-                </option>
+                <option value="">3</option>
                 <option value="">4</option>
                 <option value="">5</option>
                 <option value="">6</option>
@@ -121,9 +119,7 @@ export default function Signup() {
               >
                 <option value="">Jan</option>
                 <option value="">Feb</option>
-                <option value="" selected>
-                  Mar
-                </option>
+                <option value="">Mar</option>
                 <option value="">Apr</option>
                 <option value="">May</option>
                 <option value="">jun</option>
@@ -142,9 +138,7 @@ export default function Signup() {
               >
                 <option value="">2021</option>
                 <option value="">2022</option>
-                <option value="" selected>
-                  2023
-                </option>
+                <option value="">2023</option>
                 <option value="">2024</option>
                 <option value="">2025</option>
                 <option value="">2026</option>
@@ -159,15 +153,15 @@ export default function Signup() {
         <p className="pt-2">Gender?</p>
         <div class="flex gap-4 pt-2">
           <div className="border-2 rounded-[4px] border-[#8d949e] px-[10px] w-[50%] py-2 ">
-            Female <input type="radio" name="Female" id="nm" />
+            Female <input type="radio" name="Female" id="" />
           </div>
 
           <div className="border-2 rounded-[4px] border-[#8d949e] px-[10px] w-[50%] py-2 ">
-            Male <input type="radio" name="Female" id="nm" />
+            Male <input type="radio" name="Female" id="" />
           </div>
 
           <div className="border-2 rounded-[4px] border-[#8d949e] px-[10px] w-[50%] py-2 ">
-            Custom <input type="radio" name="Female" id="nm" />
+            Custom <input type="radio" name="Female" id="" />
           </div>
         </div>
         <span>
